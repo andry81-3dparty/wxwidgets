@@ -3714,6 +3714,7 @@ wxWindowMSW::MSWHandleMessage(WXLRESULT *result,
             break;
 
         case WM_NCACTIVATE:
+#if wxUSE_POPUPWIN
             // When we're losing activation to our own popup window, we want to
             // retain the "active" appearance of the title bar, as dropping
             // down a combobox popup shouldn't deactivate the window containing
@@ -3728,6 +3729,7 @@ wxWindowMSW::MSWHandleMessage(WXLRESULT *result,
                 rc.result = MSWDefWindowProc(message, TRUE, lParam);
                 processed = true;
             }
+#endif
             break;
 
 #if wxUSE_UXTHEME

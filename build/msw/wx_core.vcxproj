@@ -214,7 +214,7 @@
       <AdditionalIncludeDirectories>$(OutDir)$(wxIncSubDir);..\..\include;..\..\src\tiff\libtiff;..\..\src\jpeg;..\..\src\png;..\..\src\zlib;..\..\src\regex;..\..\src\expat\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_LIB;_CRT_SECURE_NO_DEPRECATE=1;_CRT_NON_CONFORMING_SWPRINTFS=1;_SCL_SECURE_NO_WARNINGS=1;__WXMSW__;NDEBUG;_UNICODE;WXBUILDING;wxUSE_BASE=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>wx/wxprec.h</PrecompiledHeaderFile>
@@ -967,6 +967,7 @@
     <ClCompile Include="..\..\src\generic\combog.cpp" />
     <ClCompile Include="..\..\src\generic\dcpsg.cpp" />
     <ClCompile Include="..\..\src\generic\dirctrlg.cpp" />
+    <ClCompile Include="..\..\src\generic\dirdlgg.cpp" />
     <ClCompile Include="..\..\src\generic\dragimgg.cpp" />
     <ClCompile Include="..\..\src\generic\filectrlg.cpp" />
     <ClCompile Include="..\..\src\generic\filepickerg.cpp" />
