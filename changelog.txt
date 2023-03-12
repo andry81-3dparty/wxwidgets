@@ -1,0 +1,4 @@
+2023.03.12:
+* new: the library repository changes at release 3.1.3 (2019.10.28) from https://www.wxwidgets.org/downloads/
+* new: .externals: initial externals
+* new: changelog.txt, README_EN.txt: moved from child branch
